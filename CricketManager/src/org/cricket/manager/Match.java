@@ -1,6 +1,7 @@
 package org.cricket.manager;
 
 import org.cricket.manager.entity.Batsman;
+import org.cricket.manager.entity.Bowler;
 
 public class Match {
 
