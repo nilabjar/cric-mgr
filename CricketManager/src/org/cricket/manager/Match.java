@@ -1,5 +1,7 @@
 package org.cricket.manager;
 
+import org.cricket.manager.entity.Batsman;
+
 public class Match {
 
 	private Team first;

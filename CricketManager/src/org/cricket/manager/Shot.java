@@ -20,7 +20,7 @@ public class Shot {
 	
 	static private Random generator = new Random ();
 	
-	Shot () {
+	public Shot () {
 		int res = generator.nextInt(totalOutcomes);
 		
 		switch (res) {
