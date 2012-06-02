@@ -10,6 +10,6 @@ public interface ProbabilityEngine {
 	 * Internally it will feed each outcome to the probabiity function and generate a weight
 	 * for each. This will allow it to create the probability distribution for the event.
 	 */
-	Outcome winningOutcome(Outcome[] outcomes);
+	Outcome winningOutcome(Outcome[] possibleOutcomes);
 
 }
