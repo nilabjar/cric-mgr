@@ -70,6 +70,7 @@ public class Match {
 		// TODO Auto-generated method stub
 		//bowler = second.getNextBowler ();
 		striker = new Batsman ();
+		bowler = new Bowler ();
 		
 		for (int i = 0;i < 20;i++) {
 			currentOver++;
@@ -95,6 +96,7 @@ public class Match {
 
 	int startOver () {
 		for (int i = 0;i < 6;i++) {
+			this.bowler.bowl();
 			Shot s = striker.bat(null);			
 			System.out.println(currentOver + "." + (i+1) + " : " + s.result);
 			
