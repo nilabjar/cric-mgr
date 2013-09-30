@@ -3,13 +3,13 @@ package org.cricket.manager.probability;
 import java.util.ArrayList;
 
 public abstract class Outcome {
-	ArrayList<ProbabilityFactor> factors = new ArrayList<ProbabilityFactor>();
+	ArrayList<ProbabilityFactory> factors = new ArrayList<ProbabilityFactory>();
 
-	public ArrayList<ProbabilityFactor> getFactors() {
+	public ArrayList<ProbabilityFactory> getFactors() {
 		return factors;
 	}
 	
-	public void addFactor(ProbabilityFactor factor) {
+	public void addFactor(ProbabilityFactory factor) {
 		factors.add(factor);
 	}
 

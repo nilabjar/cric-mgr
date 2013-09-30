@@ -7,6 +7,6 @@ package org.cricket.manager.probability;
  *  Factors can be positive or negative. That is they an increase or decrease the chances of
  *  that event occurring. 
  */
-public abstract class ProbabilityFactor {
+public abstract class ProbabilityFactory {
 
 }

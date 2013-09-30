@@ -1,5 +1,6 @@
 package org.cricket.manager;
 
+import org.cricket.manager.Shot.Outcome;
 import org.cricket.manager.entity.Batsman;
 import org.cricket.manager.entity.Bowler;
 
@@ -97,8 +98,8 @@ public class Match {
 	int startOver () {
 		for (int i = 0;i < 6;i++) {
 			this.bowler.bowl();
-			Shot s = striker.bat(null);			
-			System.out.println(currentOver + "." + (i+1) + " : " + s.result);
+			Outcome s = striker.bat(null);			
+			System.out.println(currentOver + "." + (i+1) + " : " + s);
 			
 			// analyze result ....
 			analyzeResult(s);			
@@ -134,9 +135,9 @@ public class Match {
 		System.out.println (s);
 	}
 
-	private void analyzeResult(Shot s) {
+	private void analyzeResult(Outcome result) {
 		// TODO Auto-generated method stub
-		switch (s.result) {
+		switch (result) {
 		case OUT:
 			out ();
 			break;
