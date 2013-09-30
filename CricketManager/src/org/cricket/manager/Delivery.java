@@ -21,10 +21,27 @@ public class Delivery {
 		X_OUTSIDE_LEG
 	}
 	
+	private Length length;
+	private Line line;
 	
 	
-	public Delivery () {
-		
+	
+	public Delivery (Length length, Line line) {
+		this.length=length;
+		this.line=line;
 	}
+
+
+
+	public Length getLength() {
+		return length;
+	}
+
+
+
+	public Line getLine() {
+		return line;
+	}
+
 
 }

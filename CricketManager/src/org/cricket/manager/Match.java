@@ -97,8 +97,7 @@ public class Match {
 
 	int startOver () {
 		for (int i = 0;i < 6;i++) {
-			this.bowler.bowl();
-			Outcome s = striker.bat(null);			
+			Outcome s = striker.bat(this.bowler.bowl());			
 			System.out.println(currentOver + "." + (i+1) + " : " + s);
 			
 			// analyze result ....

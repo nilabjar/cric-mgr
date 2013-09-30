@@ -79,27 +79,24 @@ public class Bowler extends Player {
 			lineData[i] = Line.X_OUTSIDE_LEG;
 	}
 	
-	private Length currentBallLength = null;
-	private Line currentBallLine = null;
 	public Delivery bowl () {
-		
-		simulate ();
-		return new Delivery();
+		return simulate ();
 	}
 	
 	static private Random generator = new Random ();
 	
-	private void simulate() {
+	private Delivery simulate() {
 		// TODO Auto-generated method stub
 		// get the length ...
 		int res = generator.nextInt(100);
-		
-		Length cur = lengthData[res];
+
+		Length length = lengthData[res];
 		
 		res = generator.nextInt(100);
 		
-		Line curLine = lineData[res];
+		Line line = lineData[res];
 		
-		System.out.println("The current ball is " + cur + " " + curLine);
+		System.out.println("The current ball is " + length + " " + line);
+		return new Delivery(length, line);
 	}
 }
